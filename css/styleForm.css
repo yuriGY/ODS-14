@@ -1,0 +1,21 @@
+#form {
+    display: flex;
+    flex-wrap: wrap;
+    border-left: 2px solid #ccc;
+    width: 80%;
+}
+
+form div {
+    display: flex;
+    border-bottom: 2px solid #ccc;
+    height: 50px;
+    width: 100%;
+    font-size: 12px;
+
+    align-items: center;
+    padding-left: 50px;
+}
+
+button {
+    height: 20px;
+}
