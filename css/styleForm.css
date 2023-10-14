@@ -5,7 +5,7 @@
     width: 80%;
 }
 
-form div {
+#title-div {
     display: flex;
     border-bottom: 2px solid #ccc;
     height: 50px;
@@ -16,6 +16,34 @@ form div {
     padding-left: 50px;
 }
 
+.input-box {
+    width: 100%;
+    margin: 10px 0px 10px 20px;
+    
+}
+
+#name {
+    width: 70%;
+}
+
+#mail {
+    width: 70%;
+}
+
+#CPF {
+    width: 30%;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
 button {
-    height: 20px;
+    height: 40px;
+    width: 200px;
+    margin: 10px 0px 10px 120px;
 }
