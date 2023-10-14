@@ -60,9 +60,30 @@ section {
     padding: 0%;
     margin: 0%;
     border-left: 3px solid #ccc;
-    padding-left: 30px;
+    padding-left: 0px;
     width: 80%;
     min-width: 400px;
+}
+
+.title-content {
+    display: flex;
+    border-bottom: 2px solid #ccc;
+    height: 50px;
+    width: 100%;
+    font-size: 12px;
+
+    align-items: center;
+    padding-left: 20px;
+}
+
+.box-content {
+    padding: 10px 0px 0px 30px;
+    align-content: space-evenly;
+}
+
+img {
+    float: right;
+    margin: 5px;
 }
 
 footer {
