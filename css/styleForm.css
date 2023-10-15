@@ -15,15 +15,15 @@
 }
 
 #name {
-    width: 75%;
+    width: 50%;
 }
 
 #mail {
-    width: 70%;
+    width: 50%;
 }
 
 #CPF {
-    width: 26%;
+    width: 210px;
 }
 
 .gender-radio {
@@ -32,18 +32,32 @@
 
 #your-good-deed {
     flex-direction: column;
+    width: 90%;
+}
+
+#street {
+    margin-right: 10px;
+    width: 30%;
 }
 
 #CEP {
+    margin-right: 10px;
     width: 20%;
 }
 
+#house-number {
+    margin-right: 10px;
+    width: 15%;
+}
+
 #city {
+    margin-right: 10px;
     width: 30%;
 }
 
 #neighborhood {
-    width: 50%;
+    margin-right: 10px;
+    width: 20%;
 }
 
 input::-webkit-outer-spin-button,
