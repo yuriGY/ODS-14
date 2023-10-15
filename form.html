@@ -5,6 +5,8 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="css/style.css">
       <link rel="stylesheet" href="css/styleForm.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
       <title>Maré de Sorte - Formulário</title>
   </head>
   <body>
@@ -12,130 +14,130 @@
         <h1 id="header-title">MARÉ DE SORTE</h1>
         <img src="figs/wtr.png" alt="logo" width="10" height="12">
       </header>
-      <nav>
-        <a href="index.html" title="Página Inicial" class="nav-links">Página Inicial</a> 
-        <a href="#" title="Participar" class="nav-links">Participar</a> 
-      </nav>
-      <form action="#" method="post" id="form">
-        <div id="title-div">
-          <h2>PARA PARTICIPAR BASTA PREENCHER O FORMULÁRIO!</h2>
-        </div>
-
-        <div class="input-box">
-          <label for="name">Nome:</label>
-          <input type="text" id="name" class="text-field" name="name" required/>
-        </div>
-        
-        <div class="input-box">
-          <label for="mail">E-mail:</label>
-          <input type="email" id="mail" class="text-field" name="mail" required/><br>
-        </div>
-
-        <div class="input-box">
-          <label for="CPF">CPF:</label>
-          <input type="number" id="CPF" class="text-field" name="CPF" required/>
-        </div>
-
-        <div class="input-box">
-          <label for="age">Idade:</label>
-          <select id="age-field" name="age">
-            <option value="minor">Menor de 18 anos</option>
-            <option value="18">18</option>
-            <option value="19">19</option>
-            <option value="20">20</option>
-            <option value="21">21</option>
-            <option value="22">22</option>
-            <option value="23">23</option>
-            <option value="24">24</option>
-            <option value="25">25</option>
-            <option value="26">26</option>
-            <option value="27">27</option>
-            <option value="28">28</option>
-            <option value="29">29</option>
-            <option value="30">30</option>
-            <option value="31">31</option>
-            <option value="32">32</option>
-            <option value="33">33</option>
-            <option value="34">34</option>
-            <option value="35">35</option>
-            <option value="36">36</option>
-            <option value="37">37</option>
-            <option value="38">38</option>
-            <option value="39">39</option>
-            <option value="40+">40 anos ou mais</option>
-          </select>
-        </div>
-
-        <div class="input-box">
-          <input type="radio" id="male" name="gender" value="Masculino">
-          <label for="male">Masculino</label>
-          <input type="radio" id="fem" name="gender" value="Feminino">
-          <label for="fem">Feminino</label>
-          <input type="radio" id="other" name="gender" value="Outro">
-          <label for="other">Outro</label><br>
-        </div>
-
-        <div class="input-box">
-          <label for="share-why">Descreva a sua boa ação:</label><br>
-          <textarea name="share-why" rows="10" cols="60"></textarea>
-        </div>
-
-        <div class="input-box">
-          <h3>Endereço</h3>
-        </div>
-
-        <div class="input-box">
-          <label for="street">Logradouro:</label>
-          <input type="text" id="street" class="text-field" name="street"/>
-          <label for="house-number">Número:</label>
-          <input type="number" id="house-number" class="text-field" name="house-number"/>
-
-          <label for="state">Estado:</label>
-          <select id="state" name="state">
-            <option value="AC">AC</option>
-            <option value="AL">AL</option>
-            <option value="AP">AP</option>
-            <option value="AM">AM</option>
-            <option value="BA">BA</option>
-            <option value="CE">CE</option>
-            <option value="ES">ES</option>
-            <option value="GO">GO</option>
-            <option value="MA">MA</option>
-            <option value="MT">MT</option>
-            <option value="MS">MS</option>
-            <option value="MG">MG</option>
-            <option value="PA">PA</option>
-            <option value="PB">PB</option>
-            <option value="PR">PR</option>
-            <option value="PE">PE</option>
-            <option value="PI">PI</option>
-            <option value="RJ">RJ</option>
-            <option value="RN">RN</option>
-            <option value="RS">RS</option>
-            <option value="RO">RO</option>
-            <option value="RR">RR</option>
-            <option value="SC">SC</option>
-            <option value="SP">SP</option>
-            <option value="SE">SE</option>
-            <option value="TO">TO</option>
-            <option value="DF">DF</option>
-          </select><br>
-        </div>
-
-        <div class="input-box">
-          <label for="CEP">CEP:</label>
-          <input type="number" id="CEP" class="text-field" name="CEP"/>
-
-          <label for="city">Cidade:</label>
-          <input type="text" id="city" class="text-field" name="city"/>
+      <div style="display: flex; flex-direction: row;">
+        <nav>
+          <a href="index.html" title="Página Inicial" class="nav-links">Página Inicial</a> 
+          <a href="#" title="Participar" class="nav-links">Participar</a> 
+        </nav>
+        <form action="#" method="post" id="form" class="content-context">
+          <div class="title-content">
+            <h2>PARA PARTICIPAR BASTA PREENCHER O FORMULÁRIO!</h2>
+          </div>
           
-          <label for="neighborhood">Bairro:</label>
-          <input type="text" id="neighborhood" class="text-field" name="neighborhood"/>
-        </div>
+          <div class="input-box">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" class="text-field" name="name" required/>
+          </div>
+          
+          <div class="input-box">
+            <label for="mail">E-mail:</label>
+            <input type="email" id="mail" class="text-field" name="mail" required/><br>
+          </div>
+          
+          <div class="input-box">
+            <label for="CPF">CPF:</label>
+            <input type="number" id="CPF" class="text-field" name="CPF" required/>
+          </div>
+          
+          <div class="input-box">
+            <label for="age">Idade:</label>
+            <select id="age-field" name="age">
+              <option value="minor">Menor de 18 anos</option>
+              <option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20</option>
+              <option value="21">21</option>
+              <option value="22">22</option>
+              <option value="23">23</option>
+              <option value="24">24</option>
+              <option value="25">25</option>
+              <option value="26">26</option>
+              <option value="27">27</option>
+              <option value="28">28</option>
+              <option value="29">29</option>
+              <option value="30">30</option>
+              <option value="31">31</option>
+              <option value="32">32</option>
+              <option value="33">33</option>
+              <option value="34">34</option>
+              <option value="35">35</option>
+              <option value="36">36</option>
+              <option value="37">37</option>
+              <option value="38">38</option>
+              <option value="39">39</option>
+              <option value="40+">40 anos ou mais</option>
+            </select>
+          </div>
+          
+          <div class="input-box">
+            <input type="radio" id="male" name="gender" value="Masculino">
+            <label for="male">Masculino</label>
+            <input type="radio" id="fem" name="gender" value="Feminino">
+            <label for="fem">Feminino</label>
+            <input type="radio" id="other" name="gender" value="Outro">
+            <label for="other">Outro</label><br>
+          </div>
+          
+          <div class="input-box">
+            <label for="share-why">Descreva a sua boa ação:</label><br>
+            <textarea name="share-why" rows="10" cols="60"></textarea>
+          </div>
+          
+          <div class="input-box">
+            <h3>Endereço</h3>
+          </div>
+          
+          <div class="input-box">
+            <label for="street">Logradouro:</label>
+            <input type="text" id="street" class="text-field" name="street"/>
+            <label for="house-number">Número:</label>
+            <input type="number" id="house-number" class="text-field" name="house-number"/>
+            
+            <label for="state">Estado:</label>
+            <select id="state" name="state">
+              <option value="AC">AC</option>
+              <option value="AL">AL</option>
+              <option value="AP">AP</option>
+              <option value="AM">AM</option>
+              <option value="BA">BA</option>
+              <option value="CE">CE</option>
+              <option value="ES">ES</option>
+              <option value="GO">GO</option>
+              <option value="MA">MA</option>
+              <option value="MT">MT</option>
+              <option value="MS">MS</option>
+              <option value="MG">MG</option>
+              <option value="PA">PA</option>
+              <option value="PB">PB</option>
+              <option value="PR">PR</option>
+              <option value="PE">PE</option>
+              <option value="PI">PI</option>
+              <option value="RJ">RJ</option>
+              <option value="RN">RN</option>
+              <option value="RS">RS</option>
+              <option value="RO">RO</option>
+              <option value="RR">RR</option>
+              <option value="SC">SC</option>
+              <option value="SP">SP</option>
+              <option value="SE">SE</option>
+              <option value="TO">TO</option>
+              <option value="DF">DF</option>
+            </select><br>
+          </div>
+          
+          <div class="input-box">
+            <label for="CEP">CEP:</label>
+            <input type="number" id="CEP" class="text-field" name="CEP"/>
+            
+            <label for="city">Cidade:</label>
+            <input type="text" id="city" class="text-field" name="city"/>
+            
+            <label for="neighborhood">Bairro:</label>
+            <input type="text" id="neighborhood" class="text-field" name="neighborhood"/>
+          </div>
+          <button type="submit" form="form" value="Enviar">Enviar</button>
         </form>
-
-      <button type="submit" form="form" value="Enviar">Enviar</button>
-
+      </div>
       <footer>
         <p id="footer-text">
           Trabalho realizado por 
