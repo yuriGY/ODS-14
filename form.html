@@ -24,22 +24,9 @@
             <h2>PARA PARTICIPAR BASTA PREENCHER O FORMULÁRIO!</h2>
           </div>
           
-          <div class="input-box">
-            <label for="name">Nome:</label>
-            <input type="text" id="name" class="text-field" name="name" required/>
-          </div>
-          
-          <div class="input-box">
-            <label for="mail">E-mail:</label>
-            <input type="email" id="mail" class="text-field" name="mail" required/>
-          </div>
-          
-          <div class="input-box">
-            <label for="CPF">CPF:</label>
-            <input type="number" id="CPF" class="text-field" name="CPF" required/>
-          </div>
-          
-          <div class="input-box">
+          <div class="input-box"  style="display: flex; flex-direction: row;">
+            <label for="name" id="name">Nome: <input type="text" name="name" required/></label>
+
             <label for="age">Idade:</label>
             <select id="age-field" name="age">
               <option value="minor">Menor de 18 anos</option>
@@ -67,20 +54,23 @@
               <option value="39">39</option>
               <option value="40+">40 anos ou mais</option>
             </select>
+          </div><br>
+          
+          <div class="input-box" >
+            <label for="mail" id="mail">E-mail: <input type="email" name="mail" required/></label>
+            <label for="CPF" id="CPF" >CPF: <input type="number" name="CPF" required style="width: 67%;"/></label>
           </div>
           
           <div class="input-box">
-            <input type="radio" id="male" name="gender" value="Masculino">
-            <label for="male">Masculino</label>
-            <input type="radio" id="fem" name="gender" value="Feminino">
-            <label for="fem">Feminino</label>
-            <input type="radio" id="other" name="gender" value="Outro">
-            <label for="other">Outro</label><br>
+            Gênero:
+              <label for="male"><input type="radio" class="gender-radio" id="male" name="gender" value="Masculino"> Masculino</label>
+              <label for="fem"><input type="radio" class="gender-radio" id="fem" name="gender" value="Feminino"> Feminino</label>
+              <label for="other"><input type="radio" class="gender-radio" id="other" name="gender" value="Outro"> Outro</label><br>
           </div>
           
-          <div class="input-box">
+          <div class="input-box" id="your-good-deed">
             <label for="share-why">Descreva a sua boa ação:</label><br>
-            <textarea name="share-why" rows="10" cols="60"></textarea>
+            <textarea name="share-why" rows="2" cols="150"></textarea>
           </div>
           
           <div class="input-box">
@@ -88,12 +78,12 @@
           </div>
           
           <div class="input-box">
-            <label for="street">Logradouro:</label>
-            <input type="text" id="street" class="text-field" name="street"/>
-            <label for="house-number">Número:</label>
-            <input type="number" id="house-number" class="text-field" name="house-number"/>
+            <label for="street">Logradouro: </label>
+            <input type="text" id="street" name="street"/>
+            <label for="house-number">Número: </label>
+            <input type="number" id="house-number" name="house-number"/>
             
-            <label for="state">Estado:</label>
+            <label for="state">Estado: </label>
             <select id="state" name="state">
               <option value="AC">AC</option>
               <option value="AL">AL</option>
@@ -126,14 +116,14 @@
           </div>
           
           <div class="input-box">
-            <label for="CEP">CEP:</label>
-            <input type="number" id="CEP" class="text-field" name="CEP"/>
+            <label for="CEP">CEP: </label>
+            <input type="number" id="CEP" name="CEP"/>
             
-            <label for="city">Cidade:</label>
-            <input type="text" id="city" class="text-field" name="city"/>
+            <label for="city">Cidade: </label>
+            <input type="text" id="city" name="city"/>
             
-            <label for="neighborhood">Bairro:</label>
-            <input type="text" id="neighborhood" class="text-field" name="neighborhood"/>
+            <label for="neighborhood">Bairro: </label>
+            <input type="text" id="neighborhood" name="neighborhood"/>
           </div>
           <button type="submit" form="form" value="Enviar">Enviar</button>
         </form>
