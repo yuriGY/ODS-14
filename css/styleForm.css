@@ -1,27 +1,13 @@
-#form {
-    display: flex;
-    flex-wrap: wrap;
-    border-left: 2px solid #ccc;
-    width: 80%;
-}
-
-#title-div {
-    display: flex;
-    border-bottom: 2px solid #ccc;
-    height: 50px;
-    width: 100%;
-    font-size: 12px;
-
-    align-items: center;
-    padding-left: 50px;
-}
-
 .input-box {
-    width: 100%;
     margin: 10px 0px 10px 20px;
-    
 }
 
+.input-box input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding-inline: 0px;
+    padding-block: 3px;
+}
 #name {
     width: 70%;
 }
