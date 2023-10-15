@@ -1,15 +1,21 @@
 .input-box {
+    display: flex;
+    flex-direction: row;
+    vertical-align:middle;
+    
     margin: 10px 0px 10px 20px;
 }
 
 .input-box input {
+    width: 90%;
     border: 1px solid #ccc;
     border-radius: 5px;
     padding-inline: 0px;
     padding-block: 3px;
 }
+
 #name {
-    width: 70%;
+    width: 75%;
 }
 
 #mail {
@@ -17,8 +23,29 @@
 }
 
 #CPF {
+    width: 26%;
+}
+
+.gender-radio {
+    width: 12px !important;
+}
+
+#your-good-deed {
+    flex-direction: column;
+}
+
+#CEP {
+    width: 20%;
+}
+
+#city {
     width: 30%;
 }
+
+#neighborhood {
+    width: 50%;
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
@@ -31,5 +58,5 @@ input[type=number] {
 button {
     height: 40px;
     width: 200px;
-    margin: 10px 0px 10px 120px;
+    margin: 10px 0px 10px 20px;
 }

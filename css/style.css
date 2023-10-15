@@ -102,6 +102,28 @@ img {
     margin: 5px;
 }
 
+#participate-button {
+    margin: 10px 80px 20px 0px;
+    width: 200px;
+    height: 50px;
+    font-family: Roboto, sans-serif;
+    align-self: end;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 8px;
+    border-color: #000;
+    color: #fff;
+    background-color: #1C1A89;
+    text-shadow: 2px 3px 4px #0000009c;
+    box-shadow: 0px 0px 2px 2px #0000004d;
+}
+#participate-button:hover {
+    transition: 0.35s;
+    box-shadow: 0 6px 10px 1px #000000d9
+}
+
 footer {
     background-color: #3A3A3A;
     height: 50px;
