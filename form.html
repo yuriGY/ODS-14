@@ -7,6 +7,7 @@
       <link rel="stylesheet" href="css/styleForm.css">
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+      <script src="scripts/scripts.js"></script>
       <title>Maré de Sorte - Formulário</title>
   </head>
   <body>
@@ -19,13 +20,13 @@
           <a href="index.html" title="Página Inicial" class="nav-links">Página Inicial</a> 
           <a href="#" title="Participar" class="nav-links">Participar</a> 
         </nav>
-        <form action="#" method="post" id="form" class="content-context">
+        <form action="#" method="get" id="form" class="content-context">
           <div class="title-content">
             <h2>PARA PARTICIPAR BASTA PREENCHER O FORMULÁRIO!</h2>
           </div>
           
           <div class="input-box"  style="display: flex; flex-direction: row;">
-            <label for="name" id="name">Nome: <input type="text" name="name" required/></label>
+            <label for="name" id="name">Nome: <input type="text" id="nameInput" name="name" required/></label>
 
             <label for="age">Idade:</label>
             <select id="age-field" name="age">
@@ -57,7 +58,7 @@
           </div><br>
           
           <div class="input-box" >
-            <label for="mail" id="mail">E-mail: <input type="email" name="mail" required/></label>
+            <label for="mail" id="mail">E-mail: <input type="email" id="mailInput" name="mail" required/></label>
             <label for="CPF" id="CPF" >CPF: <input type="number" name="CPF" required style="width: 67%;"/></label>
           </div>
           
@@ -125,8 +126,20 @@
             <label for="neighborhood">Bairro: </label>
             <input type="text" id="neighborhood" name="neighborhood"/>
           </div>
-          <button type="submit" form="form" value="Enviar">Enviar</button>
+          <button type="submit" form="form" value="Enviar" onclick="newElement()" class="addBtn">Enviar</button>
         </form>
+
+        <table id="dataTable">
+          <caption>Inscritos:</caption>
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
       </div>
       <footer>
         <p id="footer-text">
