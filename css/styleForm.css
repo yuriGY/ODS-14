@@ -74,3 +74,32 @@ button {
     width: 200px;
     margin: 10px 0px 10px 20px;
 }
+
+.title-content {
+    border-top: 1px solid #ccc;
+}
+
+#dataTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#dataTable th {
+    background-color: #f2f2f2;
+}
+
+#dataTable th, #dataTable td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+#delete-row {
+    width: 5%;
+}
+
+#dataTable button {
+    height: 40px;
+    width: 40px;
+    margin-left: 15px;
+}
