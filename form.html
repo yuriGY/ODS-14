@@ -126,10 +126,16 @@
             <label for="neighborhood">Bairro: </label>
             <input type="text" id="neighborhood" name="neighborhood"/>
           </div>
+          <button type="button" onclick="cleanForm()" class="addBtn">Limpar</button>
           <button type="submit" form="form" value="Enviar" onclick="newElement()" class="addBtn">Enviar</button>
 
-          <div class="title-content">
+          <div class="title-content" id="subscribers">
             <h2>Inscritos:</h2>
+            <img src="./figs/trash.png" id="trashIcon" alt="Excluir tudo" onclick="delelteAll()" width="24px"> 
+          </div>
+          <div class="search-content">
+            <label for="searchItem"><h2>Pesquisar:</h2></label>
+            <input type="text" id="searchItem" oninput="searchItems()">
           </div>
           <table id="dataTable">
             <thead>
