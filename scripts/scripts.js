@@ -82,3 +82,55 @@ function updateLocalStorage() {
 
   localStorage.setItem('formData', JSON.stringify(storedData));
 }
+
+function cleanForm() {
+  document.getElementById("form").reset();
+}
+
+function delelteAll() {
+  var confirmation = confirm("Tem certeza de que deseja excluir todos os inscritos?");
+  if(confirmation) {
+    localStorage.removeItem('formData');
+    let tbody = document.getElementById('dataTable').getElementsByTagName('tbody')[0];
+    tbody.innerHTML = '';
+  }
+}
+
+//Pesquisa de items
+function searchItems() {
+  //Recebe os caracteres digitados pelo usuário deixando tudo em minusculo
+  let dataLowerCase = document.getElementById("searchItem").value.toLowerCase();
+  //Dados do localStorage
+  let storedData = JSON.parse(localStorage.getItem('formData'));
+  //Procura items que contenham caracteres desejados pelo usuario
+  const findedNames = storedData.filter(n =>
+    n.name.toLowerCase().includes(dataLowerCase)
+  );
+
+  let table = document.getElementById('dataTable');
+  let tbody = table.getElementsByTagName('tbody')[0];
+
+  //Limpa o tbody
+  tbody.innerHTML = '';
+
+  //adiciona os items encontrados no tbody
+  findedNames.forEach(function(data, id) {
+    let newRow = tbody.insertRow(tbody.rows.length);
+    let cellName = newRow.insertCell(0);
+    let cellMail = newRow.insertCell(1);
+    let cellActions = newRow.insertCell(2);
+
+    cellName.innerHTML = data.name;
+    cellMail.innerHTML = data.mail;
+    //Algoritmo para deletar a linha desejada
+    let deleteButton = document.createElement('button');
+    deleteButton.innerHTML = 'X';
+    deleteButton.onclick = function() {
+      table.deleteRow(newRow.rowIndex); //Retira da tela
+      storedData.splice(id,1); //Retira do vetor de objetos
+      localStorage.removeItem('formData');
+      localStorage.setItem('formData', JSON.stringify(storedData)); //Salva o vetor no localStorage
+    };
+    cellActions.appendChild(deleteButton);
+  });
+}
